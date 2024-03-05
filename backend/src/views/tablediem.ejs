@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>bangdiem</title>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Bảng điểm <a href="/">---=></a></h3>
+
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Avita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let i=0; i < uservalues.length ;i++){%>
+                    <tr>
+                        <th scope="row">
+                            <%= uservalues[i].id %>
+                        </th>
+                        <td>
+                            <%= uservalues[i].name %>
+                        </td>
+                        <td>
+                            <%= uservalues[i].email %>
+                        </td>
+                        <td>
+                            <%= uservalues[i].password %>
+                        </td>
+                        <td class="add">
+                            <form action="/edit/<%=uservalues[i].id %>" method="get">
+                                <button type="submit" class="edit">Edit</button>
+                            </form>
+                            <form action="/delete/<%=uservalues[i].id %>" method="post">
+                                <button type="submit" class="delete">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+        </table>
+    </div>
+    <div class="conttect">
+        <h3>update user </h3>
+        <form action="/uservalues" method="post">
+            <label for="">name</label>
+            <input type="text" name="name" id="">
+            <label for="">email</label>
+            <input type="text" name="email" id="">
+            <label for="">password</label>
+            <input type="password" name="password" id="">
+            <label for="">adress</label>
+            <input type="text" name="adress" id="">
+            <button type="submit">add user</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>editbangdiem</title>
+</head>
+
+<body>
+    <div class="conttect">
+        <h3>update user</h3>
+        <form action="/editussers" method="post">
+            <input type="text" hidden name="userid" id="" value="<%=valuesUser.id %>">
+            <label for="">name</label>
+            <input type="text" name="name" id="" value="<%=valuesUser.name %>">
+            <label for="">email</label>
+            <input type="text" name="email" value="<%=valuesUser.email %>" id="">
+            <label for="">password</label>
+            <input type="password" name="password" value="<%=valuesUser.password %>" id="">
+            <button type="submit">add user</button>
+        </form>
+    </div>
+</body>
+
+</html>

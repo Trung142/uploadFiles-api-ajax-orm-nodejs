@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>File Upload</h1>
+    <form action="/upload-profile-pic" method="post" enctype="multipart/form-data">
+        <input type="file" name="profile_pic" required>
+        <button type="submit">Upload</button>
+    </form>
+    </br>
+    <form method="POST" action="/upload-multiple-images" enctype="multipart/form-data">
+        <div>
+            <label>Select multiple images:</label>
+            <input type="file" name="multiple_images" multiple />
+        </div>
+        <div>
+            <input type="submit" name="btn_upload_multiple_images" value="Upload" />
+        </div>
+    </form>
+</body>
+
+</html

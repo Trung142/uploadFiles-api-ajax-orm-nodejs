@@ -1,0 +1,64 @@
+h1{
+    color: red;
+}
+.user ul a{
+    font-size: 1rem;
+    background-color: rgb(137, 137, 222);
+    text-decoration: none;
+    padding: .5rem;
+    
+}
+.user{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-bottom: .08rem solid black;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead,tbody,th,td{
+    border: 0.01rem solid black;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover{
+    background-color: #c9efbb;
+}
+th {
+    background-color: #04AA6D;
+    color: white;
+  }
+tr>td>button{
+    margin: .1rem;
+    cursor: pointer;
+
+}
+.add{
+    display: flex;
+}
+/* form */
+.content{
+    width: 100%;
+
+}
+.conttect form{
+    width: 20rem;
+    height: 100vh;
+    margin: 0 auto;
+}
+input {
+    width: 100%;
+    padding: .1rem;
+}
+form>button{
+    align-items: center;
+}
+
+/* tableuset */
+.page{
+    margin: 0 auto;
+}
